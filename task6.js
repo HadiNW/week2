@@ -64,3 +64,23 @@ for (var counter=1; counter <= 100; counter++) {
         console.log(counter+" GANJIL")
     }
 }
+
+// kelipatan 3 counter2
+for (var counter2 =1; counter2 <= 100; counter2+=2) {
+    if (counter2 % 3 ===0) {
+        console.log(counter2+" Kelipatan 3");
+    } 
+}
+
+// kelipatan 6 counter6
+for (var counter3=1; counter3 <= 100; counter3+=5) {
+    if (counter3 % 6 ===0) {
+        console.log(counter3+" Kelipatan 6");
+    } 
+}
+
+for (var counter4=1; counter4 <= 100; counter4+=9) {
+    if (counter4 % 10 ===0) {
+        console.log(counter4+" Kelipatan 10");
+    }  
+}
