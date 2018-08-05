@@ -1,13 +1,34 @@
 
-////  no 1
+// no 1
+
+1. Declare 'MASSA' with 600
+2. Declare 'PERCEPATAN' with 2
+3. Calculate 'RESULTAN GAYA' with 'MASSA' times 'PERCEPATAN'
+4. Display 'RESULTAN GAYA'
+
+output : 'RESULTAN GAYA'
+input : 'MASSA' and 'PERCEPATAN'
+process: 'MASSA' times 'PERCEPATAN'
+
 STORE 'MASSA' with 600
 STORE 'PERCEPATAN' with 2
 CALCULATE 'MASSA' times 'PERCEPATAN'
-SET 'RESULTAN GAYA' with CALCULATION RESULTAN
+SET 'RESULTAN GAYA' with CALCULATION RESULT
+DISPLAY 'RESULTAN GAYA'
 
 
 
-//////// no 2
+
+// no 2
+1. Declare 'TAHUN' with any value
+2. IF 'TAHUN' mod 4 has result IS 0 AND 'TAHUN' mod 100 has result IS NOT 0 THEN DISPLAY 'KABISAT' ELSE Do step 3.
+3. IF 'TAHUN' mod 4 has result IS 0 AND 'TAHUN' mod 100 has result IS 0 AND 'TAHUN' mod 400 has result IS 0 THEN DISPLAY 'KABISAT'. else do step 4.
+4. DISPLAY 'BUKAN KABISAT'
+
+output : 'KABISAT' or not 'BUKAN KABISAT'
+input : 'TAHUN'
+process : Mod 'TAHUN' with some number
+
 STORE 'TAHUN' with any value
 IF 'TAHUN' % 4 = 0 AND 'TAHUN' % 100 != 0
     DISPLAY 'KABISAT'
@@ -18,7 +39,12 @@ ELSE
 
 
 
-//// no 3
+// no 3
+
+1. Declare 'PAKAIAN' with 1
+2. Add 'PAKAIAN' one by one
+4. When 'PAKAIAN' is 20 'NYALAKAN MESIN CUCI'
+
 SET 'PAKAIAN' = 1
 WHILE 'PAKAIAN' <= 20
     DO 'MASUKAN PAKAIAN'
@@ -26,8 +52,14 @@ WHILE 'PAKAIAN' <= 20
 DO 'NYALAKAN MESIN CUCI'
 
 // no 4
+
+1. Declare 'SISWA' with 1
+2. Check 'SISWA''s nail one by one 
+3. IF SISWA's nail is 'PANJANG' THEN DO 'HUKUM SISWA' ELSE DO 'PUJI SISWA'
+4. WHEN SISWA is 40 THEN End
+
 SET 'SISWA' = 1
-WHILE 'SISWI' <= 40
+WHILE 'SISWA' <= 40
     IF (KUKU SISWA = 'PANJANG')
         DO 'HUKUM SISWA'
     ELSE
